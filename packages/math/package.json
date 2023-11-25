@@ -1,0 +1,30 @@
+{
+  "name": "@coincraft/math",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/math.js",
+  "types": "./dist/math.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/math.js"
+      },
+      "require": {
+        "default": "./dist/math.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "decimal.js": "10.4.3"
+  },
+  "devDependencies": {}
+}
